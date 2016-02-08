@@ -1,0 +1,13 @@
+<div class="parent">
+    <h2>AfterContent</h2>
+
+    <after-content>
+        <input [(ngModel)]="hero">
+        <button (click)="showChild = !showChild">Toggle child view</button>
+
+        <my-child *ngIf="showChild" [hero]="hero"></my-child>
+    </after-content>
+
+    <h4>-- Lifecycle Hook Log --</h4>
+    <div *ngFor="#msg of hookLog">{{msg}}</div>
+</div>

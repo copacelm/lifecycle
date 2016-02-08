@@ -1,0 +1,4 @@
+.child {background: Yellow; padding: 8px; }
+.my-child {background: LightYellow; padding: 8px; margin-top: 8px}
+.after-content {background: LightCyan; padding: 8px;}
+.parent {background: powderblue; padding: 8px; margin:100px 8px;}
