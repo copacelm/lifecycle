@@ -26,6 +26,7 @@ System.register(['angular2/core'], function(exports_1) {
                         this.tick();
                     }
                     this.logs.push(msg);
+                    console.log(msg);
                 };
                 LoggerService.prototype.clear = function () { this.logs.length = 0; };
                 LoggerService.prototype.tick = function () {

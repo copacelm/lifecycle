@@ -7,6 +7,8 @@ export class LoggerService {
     log(msg:string, noTick:boolean = false)  {
         if (!noTick) { this.tick(); }
         this.logs.push(msg);
+
+        console.log(msg);
     }
 
     clear()   {this.logs.length = 0;}
@@ -16,4 +18,5 @@ export class LoggerService {
             // console.log('tick')
         }, 0);
     }
+
 }

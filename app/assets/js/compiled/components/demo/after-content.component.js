@@ -25,7 +25,7 @@ System.register(['angular2/core', './child.component', '../../services/logger.se
             AfterContentComponent = (function () {
                 function AfterContentComponent(logger) {
                     this._logger = logger;
-                    logger.log('After constructor after-content: ' + this._getMessage());
+                    logger.log('AfterContent constructor: ' + this._getMessage());
                 }
                 AfterContentComponent.prototype.ngAfterContentChecked = function () {
                     if (!this.contentChild || this._prevHero === this.contentChild.hero) {

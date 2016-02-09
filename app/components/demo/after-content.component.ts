@@ -21,7 +21,7 @@ export class AfterContentComponent implements AfterContentChecked, AfterContentI
     constructor(logger:LoggerService) {
         this._logger = logger;
 
-        logger.log('After constructor after-content: ' + this._getMessage());
+        logger.log('AfterContent constructor: ' + this._getMessage());
     }
 
     @ContentChild(ChildComponent) contentChild: ChildComponent;

@@ -1,0 +1,11 @@
+<div class="parent3">
+    <h2>Counter Spy</h2>
+
+    <button (click)="updateCounter()">Update counter</button>
+    <button (click)="reset()">Reset counter</button>
+
+    <my-counter [counter]="value"></my-counter>
+
+    <h4>-- Spy Lifecycle Hook log --</h4>
+    <div *ngFor="#msg of spyLog">{{msg}}</div>
+</div>

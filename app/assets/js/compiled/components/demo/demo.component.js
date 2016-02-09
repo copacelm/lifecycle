@@ -1,4 +1,4 @@
-System.register(['angular2/core', './after-content.component'], function(exports_1) {
+System.register(['angular2/core', './after-content.component', './after-view.component', './counter.component'], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', './after-content.component'], function(exports
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, after_content_component_1;
+    var core_1, after_content_component_1, after_view_component_1, counter_component_1;
     var DemoComponent;
     return {
         setters:[
@@ -17,6 +17,12 @@ System.register(['angular2/core', './after-content.component'], function(exports
             },
             function (after_content_component_1_1) {
                 after_content_component_1 = after_content_component_1_1;
+            },
+            function (after_view_component_1_1) {
+                after_view_component_1 = after_view_component_1_1;
+            },
+            function (counter_component_1_1) {
+                counter_component_1 = counter_component_1_1;
             }],
         execute: function() {
             DemoComponent = (function () {
@@ -26,7 +32,7 @@ System.register(['angular2/core', './after-content.component'], function(exports
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/components/demo/templates/demo.html',
-                        directives: [after_content_component_1.AfterContentParentComponent, after_content_component_1.AfterContentComponent]
+                        directives: [after_content_component_1.AfterContentParentComponent, after_content_component_1.AfterContentComponent, after_view_component_1.AfterViewParentComponent, counter_component_1.CounterParentComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], DemoComponent);
